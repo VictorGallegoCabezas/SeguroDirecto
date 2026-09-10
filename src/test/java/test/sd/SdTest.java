@@ -21,6 +21,8 @@ public class SdTest extends BaseTest {
 	
 	private String dni = "46291767N";
 	private String nif = "A07207244";
+	private String user = "PIC2511";
+	private String pass = "PPIC2511";
 	
 	@BeforeEach
 	public void iniciarSesion() throws IOException {
@@ -186,7 +188,7 @@ public class SdTest extends BaseTest {
         String url = "https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do";
         inicioPage.navegateTo(url);               
         
-        inicioPage.login("PIC2511", "PPIC2511");        
+        inicioPage.login(user, pass);        
         inicioPage.selectRol();
     }
 }
