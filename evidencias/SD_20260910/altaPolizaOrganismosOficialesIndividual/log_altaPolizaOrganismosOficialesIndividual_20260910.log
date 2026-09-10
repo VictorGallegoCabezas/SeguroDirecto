@@ -1,0 +1,85 @@
+2026-09-10 10:16:59  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:16:59  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:17:02  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:18:39  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:18:39  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:18:42  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:19:51  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:19:51  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:19:54  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:22:24  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:22:24  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:22:27  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:24:39  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:24:39  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:24:42  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:26:07  INFO  Datos generales rellenos
+2026-09-10 10:26:28  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 10:30:17  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:30:17  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:30:20  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:30:51  INFO  Datos generales rellenos
+2026-09-10 10:30:54  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 10:31:04  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 10:32:07  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:32:07  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:32:09  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:32:12  INFO  Datos generales rellenos
+2026-09-10 10:32:15  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 10:32:15  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 10:36:45  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:36:45  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:36:48  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:36:50  INFO  Datos generales rellenos
+2026-09-10 10:36:53  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 10:36:54  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 10:37:21  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 10:37:30  INFO  Vehiculo relleno
+2026-09-10 10:49:17  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:49:17  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:49:20  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:49:23  INFO  Datos generales rellenos
+2026-09-10 10:49:26  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 10:49:26  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 10:50:02  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 10:50:18  INFO  Vehiculo relleno
+2026-09-10 10:57:41  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:57:41  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 10:57:44  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 10:57:46  INFO  Datos generales rellenos
+2026-09-10 10:57:49  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 10:57:50  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 10:57:55  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 10:57:55  INFO  Vehiculo relleno
+2026-09-10 10:57:58  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 10:57:58  INFO  Alta poliza realizada correctamente
+2026-09-10 11:21:27  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 11:21:27  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 11:21:30  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:21:32  INFO  Datos generales rellenos
+2026-09-10 11:21:35  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:21:35  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 11:21:40  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:21:40  INFO  Vehiculo relleno
+2026-09-10 11:21:43  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:21:43  INFO  Alta poliza realizada correctamente
+2026-09-10 11:27:35  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 11:27:35  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 11:27:38  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:27:41  INFO  Datos generales rellenos
+2026-09-10 11:27:44  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:27:44  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 11:27:49  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:27:49  INFO  Vehiculo relleno
+2026-09-10 11:27:52  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:27:52  INFO  Alta poliza realizada correctamente
+2026-09-10 11:38:09  INFO  Iniciando test: altaPolizaOrganismosOficialesIndividual
+2026-09-10 11:38:09  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaOrganismosOficialesIndividual
+2026-09-10 11:38:12  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:38:14  INFO  Datos generales rellenos
+2026-09-10 11:38:17  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:38:17  INFO  Datos tomador rellenos. NIF: A07207244
+2026-09-10 11:38:22  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:38:22  INFO  Vehiculo relleno
+2026-09-10 11:38:26  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:38:26  INFO  Alta poliza realizada correctamente

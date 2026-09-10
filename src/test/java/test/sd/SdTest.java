@@ -1,0 +1,192 @@
+package test.sd;
+
+import java.io.IOException;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import test.sd.comun.BaseTest;
+import test.sd.pages.AltaPolizaPage;
+import test.sd.pages.InicioPage;
+import test.sd.utils.MatriculaUtils;
+
+@Epic("Módulo de Contratación")
+@Feature("Alta de Pólizas")
+public class SdTest extends BaseTest {
+	
+	private String dni = "46291767N";
+	private String nif = "A07207244";
+	
+	@BeforeEach
+	public void iniciarSesion() throws IOException {
+		login();
+	}
+	
+	@Test
+	@Story("Alta de póliza individual")
+    @DisplayName("CP01 - Verificar alta correcta de póliza individual")
+    @Description("Prueba end-to-end que valida el flujo completo de alta individual con captura de evidencias.")
+	public void altaPolizaIndividual() throws IOException {
+		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
+		altaPolizaPage.navegateToAltaPoliza();
+		
+		altaPolizaPage.rellenarDatosGenerales(false);
+		log.info("Datos generales rellenos");
+		altaPolizaPage.rellenarDatosTomador(dni);
+		log.info("Datos tomador rellenos. DNI: " + dni);		
+		
+		altaPolizaPage.rellenarDireccion();
+		log.info("Direccion rellena");
+		
+		// La matricula la coge del fichero /SD/UltimaMatricula.txt y despues le suma 1
+		altaPolizaPage.rellenarVehiculos(MatriculaUtils.incrementarYActualizarMatricula(), false);
+		log.info("Vehiculo relleno");
+		altaPolizaPage.botonAltaPoliza();
+		log.info("Alta poliza realizada correctamente");	
+	}
+	
+	@Test
+	@Story("Alta de póliza individual sin matricula")
+    @DisplayName("CP01 - Verificar alta correcta de póliza individual sin matricula")
+    @Description("Prueba end-to-end que valida el flujo completo de alta individual sin matricula con captura de evidencias.")
+	public void altaPolizaIndividualSinMatricula() throws IOException {
+		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
+		altaPolizaPage.navegateToAltaPoliza();
+		
+		altaPolizaPage.rellenarDatosGenerales(false);
+		log.info("Datos generales rellenos");
+		altaPolizaPage.rellenarDatosTomador(dni);
+		log.info("Datos tomador rellenos. DNI: " + dni);		
+		
+		altaPolizaPage.rellenarDireccion();
+		log.info("Direccion rellena");
+		
+		// La matricula la coge del fichero /SD/UltimaMatricula.txt y despues le suma 1
+		altaPolizaPage.rellenarVehiculos(null, false);
+		log.info("Vehiculo relleno");
+		altaPolizaPage.botonAltaPoliza();
+		log.info("Alta poliza realizada correctamente");	
+	}
+	
+	@Test
+	@Story("Alta de póliza individual Organismos Oficiales")
+    @DisplayName("CP01 - Verificar alta correcta de póliza individual Organismos Oficiales")
+    @Description("Prueba end-to-end que valida el flujo completo de alta individual Organismos Oficiales con captura de evidencias.")
+	public void altaPolizaOrganismosOficialesIndividual() throws IOException {
+		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
+		altaPolizaPage.navegateToAltaPolizaOO();
+		
+		altaPolizaPage.rellenarDatosGeneralesOO(false);
+		log.info("Datos generales rellenos");
+		altaPolizaPage.rellenarDatosTomadorOO(nif);
+		log.info("Datos tomador rellenos. NIF: " + nif);		
+		
+		// La matricula la coge del fichero /SD/UltimaMatricula.txt y despues le suma 1
+		altaPolizaPage.rellenarVehiculos(MatriculaUtils.incrementarYActualizarMatricula(), true);
+		log.info("Vehiculo relleno");
+		altaPolizaPage.botonAltaPoliza();
+		log.info("Alta poliza realizada correctamente");	
+	}
+	
+	@Test
+	@Story("Alta de póliza flotas")
+    @DisplayName("CP01 - Verificar alta correcta de póliza flota")
+    @Description("Prueba end-to-end que valida el flujo completo de alta flota con captura de evidencias.")
+	public void altaPolizaFlota() throws IOException {
+		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
+		altaPolizaPage.navegateToAltaPoliza();		
+		
+		altaPolizaPage.rellenarDatosGenerales(true);
+		log.info("Datos generales rellenos");
+		altaPolizaPage.rellenarDatosTomador(dni);
+		log.info("Datos tomador rellenos. DNI: " + dni);				
+		
+		altaPolizaPage.rellenarDireccion();
+		log.info("Direccion rellena");		
+		
+		// La matricula la coge del fichero /SD/UltimaMatricula.txt y despues le suma 1
+		altaPolizaPage.rellenarVehiculos(MatriculaUtils.incrementarYActualizarMatricula(), false);
+		log.info("Vehiculo1 relleno");			
+		
+		altaPolizaPage.botonAltaPoliza();
+		log.info("Alta poliza 1 realizada correctamente");		
+		
+		altaPolizaPage.añadirVehiculoAdicional(MatriculaUtils.incrementarYActualizarMatricula());
+		altaPolizaPage.botonAltaPoliza();
+		
+		log.info("Alta poliza 2 realizada correctamente");		
+	}
+	
+	@Test
+	@Story("Alta de póliza flotas sin matricula")
+    @DisplayName("CP01 - Verificar alta correcta de póliza flota sin matricula")
+    @Description("Prueba end-to-end que valida el flujo completo de alta flota sin matricula con captura de evidencias.")
+	public void altaPolizaFlotaSinMatricula() throws IOException {
+		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
+		altaPolizaPage.navegateToAltaPoliza();		
+		
+		altaPolizaPage.rellenarDatosGenerales(true);
+		log.info("Datos generales rellenos");
+		altaPolizaPage.rellenarDatosTomador(dni);
+		log.info("Datos tomador rellenos. DNI: " + dni);
+		
+		altaPolizaPage.rellenarDireccion();
+		log.info("Direccion rellena");
+		
+		// La matricula la coge del fichero /SD/UltimaMatricula.txt y despues le suma 1
+		altaPolizaPage.rellenarVehiculos(null, true);
+		log.info("Vehiculo1 relleno");			
+		
+		altaPolizaPage.botonAltaPoliza();
+		log.info("Alta poliza 1 realizada correctamente");		
+		
+		altaPolizaPage.añadirVehiculoAdicional(null);
+		altaPolizaPage.botonAltaPoliza();
+		
+		log.info("Alta poliza 2 realizada correctamente");		
+	}
+	
+	@Test
+	@Story("Alta de póliza flotas Organismos Oficiales")
+    @DisplayName("CP01 - Verificar alta correcta de póliza flota Organismos Oficiales")
+    @Description("Prueba end-to-end que valida el flujo completo de alta flota Organismos Oficiales con captura de evidencias.")
+	public void altaPolizaFlotaOrganismosOfiales() throws IOException {
+		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
+		altaPolizaPage.navegateToAltaPoliza();		
+		
+		altaPolizaPage.rellenarDatosGenerales(true);
+		log.info("Datos generales rellenos");
+		altaPolizaPage.rellenarDatosTomador(dni);
+		log.info("Datos tomador rellenos. DNI: " + dni);				
+		
+		altaPolizaPage.rellenarDireccion();
+		log.info("Direccion rellena");		
+		
+		// La matricula la coge del fichero /SD/UltimaMatricula.txt y despues le suma 1
+		altaPolizaPage.rellenarVehiculos(MatriculaUtils.incrementarYActualizarMatricula(), false);
+		log.info("Vehiculo1 relleno");			
+		
+		altaPolizaPage.botonAltaPoliza();
+		log.info("Alta poliza 1 realizada correctamente");		
+		
+		altaPolizaPage.añadirVehiculoAdicional(MatriculaUtils.incrementarYActualizarMatricula());
+		altaPolizaPage.botonAltaPoliza();
+		
+		log.info("Alta poliza 2 realizada correctamente");		
+	}
+	
+	private void login() throws IOException {
+        InicioPage inicioPage = new InicioPage(driver);        
+        
+        String url = "https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do";
+        inicioPage.navegateTo(url);               
+        
+        inicioPage.login("PIC2511", "PPIC2511");        
+        inicioPage.selectRol();
+    }
+}

@@ -1,0 +1,60 @@
+2026-09-10 09:03:46  INFO  Iniciando test: altaPolizaIndividual
+2026-09-10 09:03:46  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaIndividual
+2026-09-10 09:03:46  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 09:03:51  INFO  Datos generales rellenos
+2026-09-10 09:03:53  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 09:03:53  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 09:03:56  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 09:03:57  INFO  Direccion rellena
+2026-09-10 09:04:02  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 09:04:02  INFO  Vehiculo relleno
+2026-09-10 09:04:06  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 09:04:06  INFO  Alta poliza realizada correctamente
+2026-09-10 09:24:16  INFO  Iniciando test: altaPolizaIndividual
+2026-09-10 09:24:16  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaIndividual
+2026-09-10 09:24:17  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 09:24:21  INFO  Datos generales rellenos
+2026-09-10 09:24:23  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 09:24:23  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 09:24:26  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 09:24:27  INFO  Direccion rellena
+2026-09-10 09:24:32  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 09:24:32  INFO  Vehiculo relleno
+2026-09-10 09:24:35  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 09:24:35  INFO  Alta poliza realizada correctamente
+2026-09-10 11:22:32  INFO  Iniciando test: altaPolizaIndividual
+2026-09-10 11:22:32  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaIndividual
+2026-09-10 11:22:33  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:22:37  INFO  Datos generales rellenos
+2026-09-10 11:22:38  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:22:39  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 11:22:42  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 11:22:43  INFO  Direccion rellena
+2026-09-10 11:22:48  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:22:49  INFO  Vehiculo relleno
+2026-09-10 11:22:51  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:22:51  INFO  Alta poliza realizada correctamente
+2026-09-10 11:28:40  INFO  Iniciando test: altaPolizaIndividual
+2026-09-10 11:28:40  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaIndividual
+2026-09-10 11:28:41  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:28:45  INFO  Datos generales rellenos
+2026-09-10 11:28:47  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:28:48  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 11:28:51  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 11:28:52  INFO  Direccion rellena
+2026-09-10 11:28:58  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:28:58  INFO  Vehiculo relleno
+2026-09-10 11:29:02  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:29:02  INFO  Alta poliza realizada correctamente
+2026-09-10 11:39:13  INFO  Iniciando test: altaPolizaIndividual
+2026-09-10 11:39:13  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaIndividual
+2026-09-10 11:39:14  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:39:19  INFO  Datos generales rellenos
+2026-09-10 11:39:21  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:39:21  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 11:39:24  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 11:39:25  INFO  Direccion rellena
+2026-09-10 11:39:30  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:39:31  INFO  Vehiculo relleno
+2026-09-10 11:39:34  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:39:34  INFO  Alta poliza realizada correctamente

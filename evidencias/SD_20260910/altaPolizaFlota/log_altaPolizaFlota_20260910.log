@@ -1,0 +1,76 @@
+2026-09-10 08:59:14  INFO  Iniciando test: altaPolizaFlota
+2026-09-10 08:59:14  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaFlota
+2026-09-10 08:59:15  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 09:03:18  INFO  Iniciando test: altaPolizaFlota
+2026-09-10 09:03:18  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaFlota
+2026-09-10 09:03:19  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 09:03:23  INFO  Datos generales rellenos
+2026-09-10 09:03:25  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 09:03:26  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 09:03:29  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 09:03:29  INFO  Direccion rellena
+2026-09-10 09:03:35  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 09:03:35  INFO  Vehiculo1 relleno
+2026-09-10 09:03:40  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 09:03:40  INFO  Alta poliza 1 realizada correctamente
+2026-09-10 09:03:45  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 09:03:45  INFO  Alta poliza 2 realizada correctamente
+2026-09-10 09:23:49  INFO  Iniciando test: altaPolizaFlota
+2026-09-10 09:23:49  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaFlota
+2026-09-10 09:23:50  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 09:23:54  INFO  Datos generales rellenos
+2026-09-10 09:23:56  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 09:23:56  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 09:24:00  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 09:24:00  INFO  Direccion rellena
+2026-09-10 09:24:06  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 09:24:06  INFO  Vehiculo1 relleno
+2026-09-10 09:24:10  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 09:24:10  INFO  Alta poliza 1 realizada correctamente
+2026-09-10 09:24:16  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 09:24:16  INFO  Alta poliza 2 realizada correctamente
+2026-09-10 11:22:03  INFO  Iniciando test: altaPolizaFlota
+2026-09-10 11:22:03  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaFlota
+2026-09-10 11:22:04  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:22:09  INFO  Datos generales rellenos
+2026-09-10 11:22:11  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:22:11  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 11:22:14  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 11:22:15  INFO  Direccion rellena
+2026-09-10 11:22:20  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:22:20  INFO  Vehiculo1 relleno
+2026-09-10 11:22:24  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:22:24  INFO  Alta poliza 1 realizada correctamente
+2026-09-10 11:22:28  INFO  Captura de página completa adjuntada: Guardar vehículo adicional
+2026-09-10 11:22:32  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:22:32  INFO  Alta poliza 2 realizada correctamente
+2026-09-10 11:28:13  INFO  Iniciando test: altaPolizaFlota
+2026-09-10 11:28:13  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaFlota
+2026-09-10 11:28:14  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:28:18  INFO  Datos generales rellenos
+2026-09-10 11:28:20  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:28:21  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 11:28:24  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 11:28:25  INFO  Direccion rellena
+2026-09-10 11:28:30  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:28:30  INFO  Vehiculo1 relleno
+2026-09-10 11:28:34  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:28:34  INFO  Alta poliza 1 realizada correctamente
+2026-09-10 11:28:37  INFO  Captura de página completa adjuntada: Guardar vehículo adicional
+2026-09-10 11:28:40  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:28:40  INFO  Alta poliza 2 realizada correctamente
+2026-09-10 11:38:46  INFO  Iniciando test: altaPolizaFlota
+2026-09-10 11:38:46  INFO  Carpeta del test creada en: C:\Users\PIC2511\eclipse-workspace\SD\evidencias\SD_20260910\altaPolizaFlota
+2026-09-10 11:38:47  INFO  Navegando a: https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do
+2026-09-10 11:38:51  INFO  Datos generales rellenos
+2026-09-10 11:38:53  INFO  Captura de página completa adjuntada: Datos tomador
+2026-09-10 11:38:53  INFO  Datos tomador rellenos. DNI: 46291767N
+2026-09-10 11:38:56  INFO  Captura de página completa adjuntada: Datos dirección
+2026-09-10 11:38:57  INFO  Direccion rellena
+2026-09-10 11:39:03  INFO  Captura de página completa adjuntada: Datos vehículo
+2026-09-10 11:39:03  INFO  Vehiculo1 relleno
+2026-09-10 11:39:07  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:39:07  INFO  Alta poliza 1 realizada correctamente
+2026-09-10 11:39:10  INFO  Captura de página completa adjuntada: Guardar vehículo adicional
+2026-09-10 11:39:13  INFO  Captura de página completa adjuntada: Alta ok
+2026-09-10 11:39:13  INFO  Alta poliza 2 realizada correctamente
