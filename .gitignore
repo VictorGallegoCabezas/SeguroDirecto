@@ -8,3 +8,6 @@ evidencias/SD_20260910/altaPolizaIndividualSinMatricula/log_altaPolizaIndividual
 evidencias/SD_20260910/altaPolizaOrganismosOficialesIndividual/log_altaPolizaOrganismosOficialesIndividual_20260910.log
 /target
 /target
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/SD/SD/pom.properties
+/target
