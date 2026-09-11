@@ -10,24 +10,17 @@ mvn clean test io.qameta.allure:allure-maven:report
 
 
 -----------------Empaquetado-----------------------------
-1-Compilar
-mvn clean test-compile jar:test-jar
+1-Compilar y empaquetar:
+mvn clean package -DskipTests
 
-2-Descargar jar de junit5 para poder lanzar los test
-curl -o junit-platform-console-standalone-1.10.0.jar https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.10.0/junit-platform-console-standalone-1.10.0.jar
+2-Ejecutar el .jar:
+java -jar target/SD-0.0.1-SNAPSHOT.jar
+Esto generará la carpeta allure-results en la raíz de donde ejecutes el comando.
 
-3- Ejecutar las pruebas desde la consola
-Para lanzar los tests, ejecutas el runner apuntando a tu JAR de pruebas y a la carpeta target/dependency o al repositorio de dependencias.
+3-Limpiar
+mvn clean
 
-Primero, descarga las librerías dependientes (Selenium, Allure, etc.) en la carpeta target/dependency ejecutando:
-mvn dependency:copy-dependencies
+4-Mover la carpeta allure-results dentro de target
 
-Se descargara un fichero que tiene que ir en la ruta principal del proyecto
-
-4- Lanzar los test 
-java -cp "junit-platform-console-standalone-1.10.0.jar;target/SD-0.0.1-SNAPSHOT-tests.jar;target/dependency/*" org.junit.platform.console.ConsoleLauncher --select-package test.sd
-
-5-Mover carpeta allureResults a target
-
-6- Generar el informe
-mvn io.qameta.allure:allure-maven:report
+5-Generar informe
+mvn test io.qameta.allure:allure-maven:report

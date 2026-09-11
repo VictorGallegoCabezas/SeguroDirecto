@@ -29,18 +29,23 @@
         <version>5.7.0</version> 
     </dependency>
 
-    <!-- JUnit 5 API & Engine -->
+    <!-- JUnit 5 API & Engine (Se quitó <scope>test</scope> para empaquetar en el JAR) -->
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
         <version>${junit.version}</version>
-        <scope>test</scope>
     </dependency>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${junit.version}</version>
-        <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit Platform Launcher (Requerido para ejecutar tests mediante MainRunner) -->
+    <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-launcher</artifactId>
+        <version>1.10.0</version>
     </dependency>
 
     <!-- Allure JUnit 5 -->
@@ -48,9 +53,9 @@
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-junit5</artifactId>
         <version>${allure.version}</version>
-        <scope>test</scope>
     </dependency>
     
+    <!-- AShot Screenshot Utility -->
     <dependency>
 	    <groupId>ru.yandex.qatools.ashot</groupId>
 	    <artifactId>ashot</artifactId>
@@ -93,6 +98,39 @@
           <reportDirectory>${project.build.directory}/site/allure-maven-plugin</reportDirectory>
           <singleFile>true</singleFile>
         </configuration>
+      </plugin>
+
+      <!-- Plugin para generar el JAR ejecutable con todas las dependencias (Fat JAR) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.5.1</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>test.sd.MainRunner</mainClass>
+                </transformer>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+              </transformers>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

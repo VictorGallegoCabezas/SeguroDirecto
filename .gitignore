@@ -17,3 +17,4 @@ target/classes/META-INF/maven/SD/SD/pom.properties
 /target/classes/META-INF/maven/SD
 /target/classes/META-INF/maven/SD/SD
 *.jar
+/allure-results
