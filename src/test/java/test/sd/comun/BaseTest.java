@@ -46,9 +46,9 @@ public class BaseTest {
         // Fecha aaaammdd
         fechaActual = LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
 
-        // Carpeta específica para ESTE test: ./evidencias/SD_YYYYMMDD/nombreDelTest
+        // Carpeta específica para ESTE test: ./logs/SD_YYYYMMDD/nombreDelTest
         rutaCarpetaTest = System.getProperty("user.dir")
-                + File.separator + "evidencias"
+                + File.separator + "logs"
                 + File.separator + "SD_" + fechaActual
                 + File.separator + nombreTest;
 
@@ -71,8 +71,15 @@ public class BaseTest {
         log.info("Iniciando test: " + nombreTest);
         log.info("Carpeta del test creada en: " + rutaCarpetaTest);
 
-        // Configuración de metadatos en Allure para agrupar en el reporte por SD_YYYYMMDD -> nombreTest
+        // Configuración de metadatos en Allure sin duplicados:
+        // Limpiamos las etiquetas de suites automáticas antes de añadir la jerarquía personalizada
         Allure.getLifecycle().updateTestCase(testResult -> {
+            testResult.getLabels().removeIf(label -> 
+                "parentSuite".equals(label.getName()) || 
+                "suite".equals(label.getName()) || 
+                "subSuite".equals(label.getName())
+            );
+
             testResult.getLabels().add(ResultsUtils.createParentSuiteLabel("SD_" + fechaActual));
             testResult.getLabels().add(ResultsUtils.createSuiteLabel(nombreTest));
         });
