@@ -82,7 +82,7 @@
         </dependencies>
       </plugin>
 
-      <!-- Allure Maven Plugin (v2.15.0 para soporte real de singleFile) -->
+      <!-- Allure Maven Plugin -->
       <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>

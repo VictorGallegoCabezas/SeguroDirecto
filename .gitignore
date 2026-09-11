@@ -11,3 +11,9 @@ evidencias/SD_20260910/altaPolizaOrganismosOficialesIndividual/log_altaPolizaOrg
 target/classes/META-INF/MANIFEST.MF
 target/classes/META-INF/maven/SD/SD/pom.properties
 /target
+/target
+/target/classes
+/target/classes/META-INF
+/target/classes/META-INF/maven/SD
+/target/classes/META-INF/maven/SD/SD
+*.jar
