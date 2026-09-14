@@ -1,11 +1,11 @@
-package test.sd.pages;
+package sd.test.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import test.sd.comun.BasePage;
+import sd.test.comun.BasePage;
 
 public class InicioPage extends BasePage {
 

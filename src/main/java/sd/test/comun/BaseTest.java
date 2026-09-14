@@ -1,4 +1,4 @@
-package test.sd.comun;
+package sd.test.comun;
 
 import java.io.File;
 import java.io.IOException;

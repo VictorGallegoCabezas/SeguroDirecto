@@ -1,21 +1,22 @@
-package test.sd;
+package sd.test;
 
 import java.io.IOException;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import test.sd.comun.BaseTest;
-import test.sd.pages.AltaPolizaPage;
-import test.sd.pages.InicioPage;
-import test.sd.utils.MatriculaUtils;
+import sd.test.comun.BaseTest;
+import sd.test.pages.AltaPolizaPage;
+import sd.test.pages.InicioPage;
+import sd.test.utils.MatriculaUtils;
 
 public class SdTest extends BaseTest {
 	
 	private String dni  = "46291767N";
 	private String nif  = "A07207244";
-	private String user = "PIC2511";
-	private String pass = "PPIC2511";
+	// Si existen variables de sistema se usan, si no, toma los valores por defecto
+    private String user = System.getProperty("test.user", "PIC2511");
+    private String pass = System.getProperty("test.pass", "PPIC2511");
 	
 	@BeforeEach
 	public void iniciarSesion() throws IOException {

@@ -1,4 +1,4 @@
-package test.sd.utils;
+package sd.test.utils;
 
 import java.io.IOException;
 import java.nio.file.Files;

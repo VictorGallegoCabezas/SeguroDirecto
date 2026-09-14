@@ -1,18 +1,26 @@
-package test.sd;
+package sd.test;
+
+import static org.junit.platform.engine.discovery.DiscoverySelectors.selectPackage;
 
 import org.junit.platform.launcher.Launcher;
 import org.junit.platform.launcher.LauncherDiscoveryRequest;
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.platform.launcher.core.LauncherFactory;
 import org.junit.platform.launcher.listeners.SummaryGeneratingListener;
-import org.junit.platform.launcher.listeners.LoggingListener;
-
-import static org.junit.platform.engine.discovery.DiscoverySelectors.selectPackage;
 
 public class MainRunner {
 
     public static void main(String[] args) {
         System.out.println("=== Iniciando ejecución de pruebas automatizadas ===");
+        
+        // Capturar usuario y contraseña desde los argumentos de la línea de comandos
+        if (args.length >= 2) {
+            System.setProperty("test.user", args[0]);
+            System.setProperty("test.pass", args[1]);
+            System.out.println("Usuario y contraseña configurados desde argumentos.");
+        } else {
+            System.out.println("No se pasaron credenciales por argumento. Se usarán los valores por defecto.");
+        }
 
         // Crear el Launcher de JUnit Platform
         Launcher launcher = LauncherFactory.create();
@@ -24,7 +32,7 @@ public class MainRunner {
         // Descubrir y seleccionar los tests dentro del paquete 'test.sd'
         // (puedes cambiar "test.sd" por el paquete específico donde estén tus clases de prueba)
         LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request()
-                .selectors(selectPackage("test.sd"))
+                .selectors(selectPackage("sd.test"))
                 .build();
 
         // Ejecutar las pruebas

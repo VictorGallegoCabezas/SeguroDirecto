@@ -14,7 +14,7 @@ mvn clean test io.qameta.allure:allure-maven:report
 mvn clean package -DskipTests
 
 2-Ejecutar el .jar:
-java -jar target/SD-0.0.1-SNAPSHOT.jar
+java -jar ./SD-0.0.1-SNAPSHOT.jar
 Esto generará la carpeta allure-results en la raíz de donde ejecutes el comando.
 
 3-Limpiar

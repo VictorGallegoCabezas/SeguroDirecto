@@ -1,4 +1,4 @@
-package test.sd.pages;
+package sd.test.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import test.sd.comun.BasePage;
+import sd.test.comun.BasePage;
 
 public class AltaPolizaPage extends BasePage {
 
@@ -229,6 +229,7 @@ public class AltaPolizaPage extends BasePage {
 	    //-------------------------
 	    if (matricula != null) {	    
 		    rellenarConMatricula(matricula);
+		    log.info("Matricula utilizada: " + matricula);
 	    } else {
 	    	rellenarSinMatricula();
 	    }
@@ -251,7 +252,7 @@ public class AltaPolizaPage extends BasePage {
 	    WebElement validarVehiculoBoton = wait.until(
 	            ExpectedConditions.presenceOfElementLocated(By.id("btnValidarDatosVehiculo"))
 	        );      
-	    guardarCaptura("Datos vehículo");
+	    guardarCaptura("Datos vehículo");	    
 	    
 	    validarVehiculoBoton.click();       
 	}	
@@ -293,6 +294,7 @@ public class AltaPolizaPage extends BasePage {
 	    
 	    if (matricula != null) {
 		    rellenarConMatricula(matricula);
+		    log.info("Matricula utilizada: " + matricula);
 	    } else {
 	    	rellenarSinMatricula();	    	
 	    }
