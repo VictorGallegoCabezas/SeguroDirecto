@@ -47,7 +47,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>test.sd.MainRunner</mainClass>
+                  <mainClass>sd.test.MainRunner</mainClass>
                 </transformer>
                 <transformer />
               </transformers>

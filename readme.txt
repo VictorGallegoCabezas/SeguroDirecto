@@ -24,3 +24,10 @@ mvn clean
 
 5-Generar informe
 mvn test io.qameta.allure:allure-maven:report
+
+
+----------------Actualizar autolanzado
+1-Compilar y empaquetar:
+mvn clean package -DskipTests
+
+2-Mover el .jar donde corresponda

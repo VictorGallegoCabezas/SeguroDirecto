@@ -18,3 +18,4 @@ target/classes/META-INF/maven/SD/SD/pom.properties
 /target/classes/META-INF/maven/SD/SD
 *.jar
 /allure-results
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst

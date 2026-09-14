@@ -164,6 +164,7 @@ public class SdTest extends BaseTest {
         String url = "https://consorcio:CcsCast3llaNa!@apacheppro.intranet.consorseguros.es/SDProduccionTest/servlet/login.do";
         inicioPage.navegateTo(url);               
         
+        log.info("User: " + user + " pass: " + pass);
         inicioPage.login(user, pass);        
         inicioPage.selectRol();
     }
