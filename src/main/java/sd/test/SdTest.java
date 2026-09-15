@@ -63,7 +63,7 @@ public class SdTest extends BaseTest {
 		log.info("Alta poliza realizada correctamente");	
 	}
 	
-	//@Test
+	@Test
 	public void altaPolizaOrganismosOficialesIndividual() throws IOException {
 		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
 		altaPolizaPage.navegateToAltaPolizaOO();
@@ -80,7 +80,7 @@ public class SdTest extends BaseTest {
 		log.info("Alta poliza realizada correctamente");	
 	}
 	
-	//@Test
+	@Test
 	public void altaPolizaFlota() throws IOException {
 		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
 		altaPolizaPage.navegateToAltaPoliza();		
@@ -106,7 +106,7 @@ public class SdTest extends BaseTest {
 		log.info("Alta poliza 2 realizada correctamente");		
 	}
 	
-	//@Test
+	@Test
 	public void altaPolizaFlotaSinMatricula() throws IOException {
 		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
 		altaPolizaPage.navegateToAltaPoliza();		
@@ -132,7 +132,7 @@ public class SdTest extends BaseTest {
 		log.info("Alta poliza 2 realizada correctamente");		
 	}
 	
-	//@Test	
+	@Test	
 	public void altaPolizaFlotaOrganismosOfiales() throws IOException {
 		AltaPolizaPage altaPolizaPage = new AltaPolizaPage(driver);		
 		altaPolizaPage.navegateToAltaPoliza();		
