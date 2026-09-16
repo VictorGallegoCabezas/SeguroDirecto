@@ -2,6 +2,7 @@ package sd.test.comun;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
@@ -46,16 +48,19 @@ public class BaseTest {
         // Fecha aaaammdd
         fechaActual = LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
 
-        // Carpeta específica para ESTE test: ./logs/SD_YYYYMMDD/nombreDelTest
+        // Carpeta específica para ESTE test: ./logs/CD_YYYYMMDD/nombreDelTest
         rutaCarpetaTest = System.getProperty("user.dir")
                 + File.separator + "logs"
-                + File.separator + "SD_" + fechaActual
+                + File.separator + "CD_" + fechaActual
                 + File.separator + nombreTest;
 
         File carpetaTest = new File(rutaCarpetaTest);
         if (!carpetaTest.exists()) {
             carpetaTest.mkdirs();
         }
+
+        // Registrar propiedad de sistema para que BasePage sepa dónde guardar la captura local
+        System.setProperty("rutaCarpetaTest", rutaCarpetaTest);
 
         // Carpeta de descargas dentro de la carpeta del test
         downloadPath = rutaCarpetaTest + File.separator + "descargas";
@@ -71,8 +76,7 @@ public class BaseTest {
         log.info("Iniciando test: " + nombreTest);
         log.info("Carpeta del test creada en: " + rutaCarpetaTest);
 
-        // Configuración de metadatos en Allure sin duplicados:
-        // Limpiamos las etiquetas de suites automáticas antes de añadir la jerarquía personalizada
+        // Configuración de metadatos en Allure
         Allure.getLifecycle().updateTestCase(testResult -> {
             testResult.getLabels().removeIf(label -> 
                 "parentSuite".equals(label.getName()) || 
@@ -80,7 +84,7 @@ public class BaseTest {
                 "subSuite".equals(label.getName())
             );
 
-            testResult.getLabels().add(ResultsUtils.createParentSuiteLabel("SD_" + fechaActual));
+            testResult.getLabels().add(ResultsUtils.createParentSuiteLabel("CD_" + fechaActual));
             testResult.getLabels().add(ResultsUtils.createSuiteLabel(nombreTest));
         });
 
@@ -101,11 +105,9 @@ public class BaseTest {
 
     @AfterEach
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-
-        // Limpiar los handlers del logger para que el siguiente test empiece limpio
+        // Solo cerramos los handlers del logger.
+        // NOTA: driver.quit() ha sido trasladado a TestWatcherExtension para evitar
+        // cerrar el navegador antes de la captura de pantalla en fallos.
         if (fileHandler != null) {
             fileHandler.close();
             log.removeHandler(fileHandler);
@@ -127,7 +129,6 @@ public class BaseTest {
         fileHandler = new FileHandler(rutaLog, true);
         fileHandler.setFormatter(new MiFormatoLog());
 
-        // Eliminar handlers antiguos que hayan podido quedar
         for (Handler h : log.getHandlers()) {
             log.removeHandler(h);
         }
@@ -145,6 +146,20 @@ public class BaseTest {
             return fecha + "  "
                     + record.getLevel() + "  "
                     + record.getMessage() + System.lineSeparator();
+        }
+    }
+
+    protected void cambiarAFocoNuevaVentana() {
+        String original = driver.getWindowHandle();
+
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(d -> d.getWindowHandles().size() > 1);
+
+        for (String h : driver.getWindowHandles()) {
+            if (!h.equals(original)) {
+                driver.switchTo().window(h);
+                break;
+            }
         }
     }
 }
